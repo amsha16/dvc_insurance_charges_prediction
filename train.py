@@ -18,7 +18,7 @@ from sklearn.ensemble import RandomForestRegressor
 
 def train():
 
-    print('Running training')
+    print('Firing training')
 
     insurance_data = pd.read_csv("insurance.csv")
     print('Dataframe dimensions:', insurance_data.shape)
@@ -76,7 +76,7 @@ def train():
 
 def predict():
 
-    print('Running predictions')
+    print('Firing predictions')
 
     insurance_data = pd.read_csv("insurance.csv")
 

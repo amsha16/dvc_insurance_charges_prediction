@@ -1,0 +1,16 @@
+stages:
+  train:
+    cmd: python train.py train
+    deps:
+    - insurance.csv
+    - train.py
+    outs:
+    - model.pkl
+    metrics:
+    - metrics.json:
+        cache: false
+  predict:
+    cmd: python train.py predict
+    deps:
+    - insurance.csv
+    - train.py
